@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+/* BACKGROUND */
+
+.parallax-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    background-color: #76c1e2;
+}
+
+.bg {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    left: -10%;
+    bottom: -100%;
+}
+
+.bg-bottom {
+    height: 30px;
+    background-color: #4c4640;
+    bottom: -11%;
+}
+
+.bg-forest {
+    background: url('../images/forest.png') bottom repeat-x;
+    z-index: 1;
+}
+
+.bg-land {
+    background: url('../images/land.png') bottom repeat-x;
+    z-index: 2;
+}
+
+.bg-cloud {
+    background: url('../images/cloud.png') bottom repeat-x;
+    height: 560px;
+    width: 5120px;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1692px, 0, 0);
+    }
+}
+
+.container {
+    max-width: 1290px;
+    position: relative;
+    z-index: 999;
+}
+
+/* NAVBAR */
+
+.navbar {
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.navbar-brand img {
+    float: left;
+}
+
+ul {
+    list-style: none;
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    float: left;
+    text-decoration: none;
+}
+
+li.active a, li a:hover {
+    background-color: white;
+    color: #76c1e2;
+    text-decoration: none;
+}
+
+/* CONTENT */
+
+.unicorn {
+    position: absolute;
+    left: 22%;
+    bottom: 1000px;
+    display: none;
+}
+
+.unicorn img {
+    height: 160px;
+}
+
+/*.monster-desc {*/
+    /*position: relative;*/
+    /*height: 700px;*/
+    /*width: 700px;*/
+    /*margin-left: 28%;*/
+    /*overflow: hidden;*/
+    /*z-index: 99999;*/
+/*}*/
+
+.description {
+    height: 300px;
+    width: 650px;
+    transform: rotate(180deg);
+    transform-origin: bottom left;
+    font-size: 1.4rem;
+    margin-top: 16%;
+    margin-left: 28%;
+    z-index: 0;
+}
+
+button.skills-btn {
+    color: #76c1e2;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid #76c1e2;
+    border-radius: 25px;
+    float: right;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+button.skills-btn:hover {
+    background-color: #fff;
+}
+
+button.skills-btn:focus {
+    outline: none;
+    background-color: #fff;
+}
+
+.rotate {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: transform 850ms ease;
+    -moz-transition: -moz-transform 850ms ease;
+    -ms-transition: -ms-transform 850ms ease;
+    -o-transition: -o-transform 850ms ease;
+    -webkit-transition: -webkit-transform 850ms ease;
+}
+
+
+/* FLAG MONSTERS */
+
+.flag-monster {
+    position: absolute;
+    left:92%;
+    bottom: 80px;
+    display: block;
+    height: 125px;
+}
+
+.flag-monster img {
+    height: 120px
+}
+
+.dumpling-html, .birdy-css, .zombie-jq, .miss-sass, .beasoff-js, .booba-ps, .frankie-bootstrap {
+    position: absolute;
+    left: 120%;
+}
+
