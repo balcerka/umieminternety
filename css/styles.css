@@ -125,13 +125,14 @@ li.active a, li a:hover {
 /*}*/
 
 .description {
+    position: absolute;
     height: 300px;
     width: 650px;
-    transform: rotate(180deg);
+    /*transform: rotate(180deg);*/
     transform-origin: bottom left;
     font-size: 1.4rem;
-    margin-top: 16%;
-    margin-left: 28%;
+    bottom: -400px;
+    left: 28%;
     z-index: 0;
 }
 

@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $('.unicorn').delay(700).show('fast', function () {
         $(this).delay(200).animate({bottom: '80px'}, function () {
-            monsterJump(aboutMeRotateIn());
+            monsterJump(descriptionUp());
             $('.bg').animate({bottom: '-5px'}, 110).animate({bottom: '0'}, 110, function () {
 
             });
@@ -105,9 +105,13 @@ function monsterJump(callback) {
     $('.unicorn').animate({bottom: '110px'}, {duration: 200}).animate({bottom: '80px'}, callback);
 }
 
-function aboutMeRotateIn() {
-    $('.description').addClass('rotate');
+function descriptionUp() {
+    $('.description').animate({bottom: '250px'}, {duration: 500});
 }
+
+// function aboutMeRotateIn() {
+//     $('.description').addClass('rotate');
+// }
 
 function activate(button) {
     $(button).click(function () {
